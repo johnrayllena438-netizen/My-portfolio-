@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="John Ray Llena's personal IT portfolio">
+<title>John Ray | IT Portfolio</title>
+<style>
+:root{--bg:#080d18;--panel:#111a2b;--panel2:#152238;--text:#eef4ff;--muted:#aab8cf;--accent:#55d6be;--accent2:#7aa8ff;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 80% 5%,#162c4b 0,transparent 28%),var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1100px,90%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(8,13,24,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:1.35rem;font-weight:900;letter-spacing:.5px}.logo span{color:var(--accent)}
+.links{display:flex;gap:22px;flex-wrap:wrap}.links a{font-size:.92rem;color:var(--muted);font-weight:650}.links a:hover{color:var(--accent)}
+.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:9px}
+.hero{min-height:610px;display:grid;grid-template-columns:1.35fr .85fr;align-items:center;gap:55px;padding:85px 0}
+.eyebrow{color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
+h1{font-size:clamp(2.7rem,6vw,4.8rem);line-height:1.08;margin:15px 0;font-weight:900;letter-spacing:-2px}
+h1 span{color:var(--accent)}
+.hero h2{font-size:1.35rem;color:var(--accent2);margin:0 0 18px}
+p{color:var(--muted)}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:800;border:1px solid var(--accent);background:var(--accent);color:#06121a}
+.btn.secondary{background:transparent;color:var(--text);border-color:var(--line)}
+.profile{background:linear-gradient(145deg,#1b3453,#101a2b);border:1px solid var(--line);border-radius:28px;padding:28px;text-align:center;box-shadow:0 25px 70px #0005}
+.avatar{width:190px;height:190px;margin:8px auto 22px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#071321;font-size:4rem;font-weight:950;border:7px solid #ffffff18}
+.profile h3{font-size:1.45rem;margin:8px 0 0}.profile p{margin:4px 0}
+section{padding:78px 0;border-top:1px solid var(--line)}
+.section-head{text-align:center;margin:0 auto 38px;max-width:650px}
+.section-head h2{font-size:2.15rem;margin:5px 0 8px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(160deg,var(--panel),#0d1524);border:1px solid var(--line);border-radius:17px;padding:24px;transition:.2s}
+.card:hover{transform:translateY(-5px);border-color:#55d6be88}
+.card .symbol{font-size:1.8rem;color:var(--accent)}
+.card h3{margin:10px 0 6px}.card p{margin:0}
+.timeline{max-width:760px;margin:auto;border-left:2px solid #55d6be66;padding-left:25px}
+.timeline .card{margin-bottom:18px}
+.tags{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.tag{padding:9px 15px;border:1px solid var(--line);border-radius:999px;background:var(--panel);font-weight:700;color:#dce8fb}
+.project-label{font-size:.75rem;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:1px}
+.contact{max-width:700px;margin:auto;text-align:center}
+.contact-items{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.contact-item{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 18px;color:var(--text)}
+footer{text-align:center;padding:25px;color:var(--muted);border-top:1px solid var(--line);font-size:.9rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding:65px 0}.profile{max-width:420px;margin:auto}.grid{grid-template-columns:1fr}.links{display:none;position:absolute;top:70px;left:0;right:0;background:#0b1322;padding:20px 5%;flex-direction:column;border-bottom:1px solid var(--line)}.links.open{display:flex}.menu{display:block}nav{position:relative}}
+</style>
+</head>
+<body>
+<header><nav class="wrap">
+<a class="logo" href="#home">JOHN<span>RAY.</span></a>
+<button class="menu" onclick="document.querySelector('.links').classList.toggle('open')" aria-label="Toggle navigation">☰</button>
+<div class="links"><a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+</nav></header>
+<main>
+<div class="wrap hero" id="home">
+<div><div class="eyebrow">Welcome to my portfolio</div>
+<h1>Hi, I'm <span>John Ray</span></h1>
+<h2>IT Student &amp; Aspiring Web Developer</h2>
+<p>I am an aspiring IT professional interested in web development, software systems, and technology. I enjoy learning new tools, building practical projects, and improving my skills through hands-on experience.</p>
+<div class="actions"><a class="btn" href="#projects">Explore My Work</a><a class="btn secondary" href="#contact">Contact Me</a></div></div>
+<div class="profile"><div class="avatar">JR</div><h3>John Ray Llena</h3><p>Information Technology Portfolio</p><p>Learning • Creating • Improving</p></div>
+</div>
+<section id="about"><div class="wrap"><div class="section-head"><div class="eyebrow">About me</div><h2>What I'm Learning</h2><p>Areas where I am building knowledge and practical experience.</p></div>
+<div class="grid">
+<article class="card"><div class="symbol">⌘</div><h3>Web Development</h3><p>Learning to build responsive websites and web applications using front-end technologies and programming fundamentals.</p></article>
+<article class="card"><div class="symbol">▤</div><h3>Database Management</h3><p>Exploring how to organize, store, retrieve, and manage information through database concepts and tools.</p></article>
+<article class="card"><div class="symbol">⌁</div><h3>IT &amp; Systems</h3><p>Developing foundational skills in computer systems, troubleshooting, and designing solutions to everyday problems.</p></article>
+</div></div></section>
+<section id="education"><div class="wrap"><div class="section-head"><div class="eyebrow">My background</div><h2>Education</h2><p>My learning journey and academic development.</p></div>
+<div class="timeline"><article class="card"><div class="project-label">Present</div><h3>Information Technology</h3><p>Studying information technology topics and developing practical knowledge in programming, web technologies, databases, and computer systems.</p><p><em>Update this section with your school name, course year, and graduation details.</em></p></article></div>
+</div></section>
+<section id="skills"><div class="wrap"><div class="section-head"><div class="eyebrow">My toolkit</div><h2>Skills &amp; Technologies</h2><p>Technologies and tools I am learning or practicing.</p></div>
+<div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">XAMPP</span><span class="tag">GitHub</span><span class="tag">Responsive Design</span></div></div></section>
+<section id="projects"><div class="wrap"><div class="section-head"><div class="eyebrow">My work</div><h2>Featured Projects</h2><p>Selected academic and practice projects.</p></div>
+<div class="grid">
+<article class="card"><div class="project-label">Academic project</div><h3>Fitness Management System</h3><p>A proposed gym management system with personalized workout plans and progress tracking for gym members.</p></article>
+<article class="card"><div class="project-label">Web development</div><h3>Personal Portfolio Website</h3><p>A responsive personal website presenting background information, skills, projects, and contact details.</p></article>
+<article class="card"><div class="project-label">Practice</div><h3>Web Application Exercises</h3><p>Practice activities focused on page layouts, basic application logic, and database concepts.</p></article>
+</div></div></section>
+<section id="contact"><div class="wrap contact"><div class="eyebrow">Get in touch</div><h2>Let's Connect</h2><p>Thank you for visiting my portfolio. Feel free to contact me for collaboration, questions, or opportunities.</p>
+<div class="contact-items"><a class="contact-item" href="tel:09943071822">☎ 09943071822</a><a class="contact-item" href="mailto:johnrayllena438@gmail.com">✉ johnrayllena438@gmail.com</a></div>
+</div></section>
+</main>
+<footer>© <span id="year"></span> John Ray Llena. All rights reserved.</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
